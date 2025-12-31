@@ -4,16 +4,17 @@ import {
   Facebook,
   Youtube,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-[#0b1220] via-[#0e1a2f] to-[#0a0f1c] text-gray-300">
+    <footer className="bg-linear-to-br from-[#0b1220] via-[#0e1a2f] to-[#0a0f1c] text-gray-300">
       <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}
           <div>
             <h2 className="text-3xl font-bold text-white">
-              The <span className="text-teal-400">Proxima</span>
+              The <span className="text-blue-400">Proxima</span>
             </h2>
 
             <p className="mt-6 text-sm leading-relaxed text-gray-400">
@@ -33,21 +34,20 @@ export default function Footer() {
 
           {/* Quick Links */}
           <FooterColumn title="Quick Links">
-            <FooterLink text="Home" />
-            <FooterLink text="About Us" />
-            <FooterLink text="Services" />
-            <FooterLink text="Gallery" />
-            <FooterLink text="Upcoming Events" />
-            <FooterLink text="Sponsors" />
-            <FooterLink text="Contact" />
+            <FooterLink text="Home" href="/" />
+            <FooterLink text="About Us" href="/about" />
+            <FooterLink text="Services" href="/services" />
+            <FooterLink text="Gallery" href="/gallery" />
+            <FooterLink text="Upcoming Events" href="/events" />
+            <FooterLink text="Sponsors" href="/sponsors" />
+            <FooterLink text="Contact" href="/contact" />
           </FooterColumn>
 
           {/* Policies */}
           <FooterColumn title="Policies">
-            <FooterLink text="Terms & Conditions" />
-            <FooterLink text="Privacy Policy" />
-            <FooterLink text="Return Policy" />
-            <FooterLink text="Cookie Policy" />
+            <FooterLink text="Terms & Conditions" href="/terms" />
+            <FooterLink text="Privacy Policy" href="/privacy" />
+            <FooterLink text="Return Policy" href="/return" />
           </FooterColumn>
 
           {/* Stay Connected */}
@@ -88,15 +88,15 @@ function FooterColumn({
   );
 }
 
-function FooterLink({ text }: { text: string }) {
+function FooterLink({ text , href }: { text: string , href: string }) {
   return (
     <li>
-      <a
-        href="#"
-        className="text-sm text-gray-400 transition hover:text-teal-400"
+      <Link
+        href={href}
+        className="text-sm text-gray-400 transition hover:text-blue-400"
       >
         {text}
-      </a>
+      </Link>
     </li>
   );
 }
@@ -105,7 +105,7 @@ function SocialIcon({ icon }: { icon: React.ReactNode }) {
   return (
     <a
       href="#"
-      className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-gray-300 transition hover:border-teal-400 hover:text-teal-400"
+      className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-gray-300 transition hover:border-blue-400 hover:text-blue-400"
     >
       {icon}
     </a>

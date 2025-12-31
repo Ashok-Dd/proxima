@@ -22,10 +22,10 @@ export default function Navbar() {
       {/* NAVBAR */}
       <nav className="fixed top-6 w-full py-2 z-50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-white rounded-lg shadow-lg px-6 py-3 flex items-center justify-between">
+          <div className="bg-white rounded-xl shadow-lg px-6 py-3 lg:py-6 flex items-center justify-between">
 
             {/* Logo */}
-            <Link href="/" className="text-xl font-bold text-teal-600">
+            <Link href="/" className="text-xl font-bold text-blue-600">
               The Proxima
             </Link>
 
@@ -35,7 +35,7 @@ export default function Navbar() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="hover:text-teal-600 transition"
+                    className="hover:text-blue-600 transition"
                   >
                     {link.label}
                   </Link>

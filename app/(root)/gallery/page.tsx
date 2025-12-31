@@ -4,9 +4,9 @@ const Gallery = () => {
     return (
         <>
             <HeroHeader title={'Gallery'} desc={""} image={"/images/sample.png"} alt={"About Proxima"} />
-            
+
         </>
     )
 }
 
-export default Gallery ;
+export default Gallery;

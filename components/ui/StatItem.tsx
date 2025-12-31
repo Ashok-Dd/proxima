@@ -1,9 +1,9 @@
 "use client";
 
-import { motion, useInView, animate } from "framer-motion";
+import { useInView, animate } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-function StatItem({
+export default function StatItem({
   value,
   label,
 }: {
@@ -43,19 +43,5 @@ function StatItem({
         {label}
       </p>
     </div>
-  );
-}
-
-
-export default function Stats() {
-  return (
-    <section className="bg-gradient-to-r from-blue-50 via-white to-purple-50 py-20">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-        <StatItem value={124} label="Success Conferences" />
-        <StatItem value={200} label="Committee Members" />
-        <StatItem value={5000} label="All Participants" />
-        <StatItem value={19} label="Host Countries" />
-      </div>
-    </section>
   );
 }
