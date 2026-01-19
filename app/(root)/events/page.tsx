@@ -1,6 +1,6 @@
 import HeroHeader from "@/components/ui/Hero";
 import EventCard from "@/components/cards/EventCard";
-import { sanityFetch } from "@/sanity/lib/live";
+import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 import { Event, upcomingEventsQuery } from "@/sanity/lib/queries";
 
 // Format date for display
@@ -13,6 +13,7 @@ function formatDate(dateString: string): string {
 }
 
 export default async function UpcomingEvents() {
+  
   const { data: events } = await sanityFetch({
     query: upcomingEventsQuery,
   });
@@ -65,6 +66,9 @@ export default async function UpcomingEvents() {
           )}
         </div>
       </section>
+
+
+      <SanityLive />
     </>
   );
 }
