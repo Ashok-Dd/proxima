@@ -1,12 +1,18 @@
 import HeroHeader from "@/components/ui/Hero";
+import Gallery from "@/components/sections/Gallery";
 
-const Gallery = () => {
+const GalleryPage = () => {
     return (
         <>
-            <HeroHeader title={'Gallery'} desc={""} image={"/images/sample.png"} alt={"About Proxima"} />
-
+            <HeroHeader 
+                title={'Gallery'} 
+                desc={"Explore moments from our international conferences and events"} 
+                image={"/images/sample.png"} 
+                alt={"Proxima Gallery"} 
+            />
+            <Gallery />
         </>
     )
 }
 
-export default Gallery;
+export default GalleryPage;

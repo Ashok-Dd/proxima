@@ -26,80 +26,80 @@ export default function SignatureConferences() {
         </motion.h2>
 
 
-<div className="w-full flex justify-evenly flex-wrap">
+        <div className="w-full flex justify-evenly flex-wrap">
 
-            {/* Card */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="max-w-sm mx-auto  bg-white rounded-2xl shadow-md hover:shadow-xl transition"
-        >
-          {/* Image */}
+          {/* Card */}
           <motion.div
-            whileHover={{ scale: 1.03 }}
-            transition={{ duration: 0.4 }}
-            className="overflow-hidden rounded-t-2xl"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="max-w-sm mx-auto  bg-white rounded-2xl shadow-md hover:shadow-xl transition"
           >
-            <Image
-              src="/images/sample.png" // replace with your image
-              alt="Aging & Longevity Conference"
-              width={400}
-              height={250}
-              className="w-full h-auto object-cover"
-            />
+            {/* Image */}
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              transition={{ duration: 0.4 }}
+              className="overflow-hidden rounded-t-2xl"
+            >
+              <Image
+                src="/images/sample.png" // replace with your image
+                alt="Aging & Longevity Conference"
+                width={400}
+                height={250}
+                className="w-full h-auto object-cover"
+              />
+            </motion.div>
+
+            {/* Content */}
+            <div className="p-6 text-left">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                Aging & Longevity Conference
+              </h4>
+
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Aging and Longevity Conference (ALC-2026) to be held during
+                APRIL 09-10, 2026 in Rome, Italy and online.
+              </p>
+            </div>
           </motion.div>
 
-          {/* Content */}
-          <div className="p-6 text-left">
-            <h4 className="text-lg font-semibold text-gray-900 mb-3">
-              Aging & Longevity Conference
-            </h4>
-
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Aging and Longevity Conference (ALC-2026) to be held during
-              APRIL 09-10, 2026 in Rome, Italy and online.
-            </p>
-          </div>
-        </motion.div>
-
-                <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="max-w-sm mx-auto  bg-white rounded-2xl shadow-md hover:shadow-xl transition"
-        >
-          {/* Image */}
           <motion.div
-            whileHover={{ scale: 1.03 }}
-            transition={{ duration: 0.4 }}
-            className="overflow-hidden rounded-t-2xl"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="max-w-sm mx-auto  bg-white rounded-2xl shadow-md hover:shadow-xl transition"
           >
-            <Image
-              src="/images/sample.png" // replace with your image
-              alt="Aging & Longevity Conference"
-              width={400}
-              height={250}
-              className="w-full h-auto object-cover"
-            />
+            {/* Image */}
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              transition={{ duration: 0.4 }}
+              className="overflow-hidden rounded-t-2xl"
+            >
+              <Image
+                src="/images/sample.png" // replace with your image
+                alt="Aging & Longevity Conference"
+                width={400}
+                height={250}
+                className="w-full h-auto object-cover"
+              />
+            </motion.div>
+
+            {/* Content */}
+            <div className="p-6 text-left">
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                Aging & Longevity Conference
+              </h4>
+
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Aging and Longevity Conference (ALC-2026) to be held during
+                APRIL 09-10, 2026 in Rome, Italy and online.
+              </p>
+            </div>
           </motion.div>
 
-          {/* Content */}
-          <div className="p-6 text-left">
-            <h4 className="text-lg font-semibold text-gray-900 mb-3">
-              Aging & Longevity Conference
-            </h4>
-
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Aging and Longevity Conference (ALC-2026) to be held during
-              APRIL 09-10, 2026 in Rome, Italy and online.
-            </p>
-          </div>
-        </motion.div>
-
-</div>
+        </div>
 
 
         {/* CTA */}
